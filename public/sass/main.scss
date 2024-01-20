@@ -1,0 +1,60 @@
+@import "base/base";
+@import "base/animation";
+@import "base/typography";
+@import "base/utilities";
+@import "abstract/functions";
+@import "abstract/mixins";
+@import "base/variables";
+@import "components/button";
+@import "layout/header";
+@import "pages/home";
+@import "layout/grid";
+@import "layout/composition";
+@import "layout/footer";
+@import "components/popup";
+@import "components/card";
+@import "components/header_navbar";
+@import "components/tour_card";
+@import "pages/login.scss";
+@import "pages/tour";
+@import "pages/_error.scss";
+
+:root {
+  --section-rotate: 9vw;
+}
+
+html {
+  font-size: 62.5%;
+  @include response(big-desktop){
+    font-size: 75%;
+  }
+}
+
+
+body {
+
+  box-sizing: border-box;
+  padding: 1rem 1.5rem;
+ 
+}
+
+
+.main {
+  background-color: $color-grey-light;
+  padding:$gutter-vertical $gutter-horizontal;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  position: relative;
+  padding: 5rem 2rem;
+   @include response(big-desktop) {
+      padding: 2rem;
+    }
+}
+
+
+
+
+
+
+

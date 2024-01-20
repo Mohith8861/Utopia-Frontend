@@ -1,0 +1,43 @@
+.log {
+  width: 50%;
+  margin: auto;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0rem 1rem 3rem rgba($color-grey-dark, 0.6);
+  &-heading-tertiary {
+    padding: 4rem 8rem 0;
+    color: $color-text-blue;
+    font-size: 2rem;
+
+    text-transform: uppercase;
+    & h2 {
+      font-weight: 100;
+    }
+  }
+  &-section {
+    font-family: "Encode Sans Condensed", sans-serif;
+    padding: 5rem 0;
+    
+    background-image: linear-gradient(90deg,rgba(255, 255, 255, 0.267),rgba(255, 255, 255, 0.418)),url("/public/img/kalen-emsley-Bkci_8qcdvQ-unsplash.jpg");
+    background-position:0 ;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+.book__log {
+  padding: 0 2.5rem;
+}
+.login {
+  width: 100%;
+
+  & input {
+    width: 100%;
+    background-color: rgba($color-grey-dark, 0.1);
+  }
+}
+.cent {
+  margin: auto;
+}
+.signup {
+  background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.267), rgba(255, 255, 255, 0.418)), url("/public/img/denys-nevozhai-duo-xV0TU7s-unsplash.jpg");
+}
