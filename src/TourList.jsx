@@ -13,7 +13,9 @@ export default function Overview() {
     function () {
       async function func() {
         setIsLoading(true);
-        const res = await fetch(`http://127.0.0.1:3000/tour/search?q=${q}`);
+        const res = await fetch(
+          `https://utopia-backend-lga3.onrender.com/tour/search?q=${q}`
+        );
         const D = await res.json();
 
         Tours.current = [...D.data];

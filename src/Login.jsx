@@ -25,14 +25,17 @@ export default function Login() {
       password: password,
     };
 
-    const res = await fetch("http://127.0.0.1:3000/user/login", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      mode: "cors",
-      body: JSON.stringify(user),
-    }).then((response) => {
+    const res = await fetch(
+      "https://utopia-backend-lga3.onrender.com/user/login",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        mode: "cors",
+        body: JSON.stringify(user),
+      }
+    ).then((response) => {
       return response.json();
     });
     if (res.status === "success") {

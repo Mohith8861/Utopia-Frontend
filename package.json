@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "compile:sass":"node-sass public/sass/main.scss public/css/style.css -w",
+    "compile:sass":"node-sass public/sass/main.scss public/style.css -w",
     "preview": "vite preview"
   },
   "dependencies": {

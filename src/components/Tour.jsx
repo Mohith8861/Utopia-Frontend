@@ -12,7 +12,9 @@ export default function Tour() {
     const fetchData = async () => {
       setLoading(true);
       try {
-        const res = await fetch(`http://127.0.0.1:3000/tour/search/${slug}`);
+        const res = await fetch(
+          `https://utopia-backend-lga3.onrender.com/tour/search/${slug}`
+        );
         const data = await res.json();
         setTour(data.data);
       } catch (error) {
