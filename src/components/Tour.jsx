@@ -13,7 +13,7 @@ export default function Tour() {
       setLoading(true);
       try {
         const res = await fetch(
-          `https://utopia-backend-lga3.onrender.com/tour/search/${slug}`
+          `${import.meta.env.VITE_API_URL}/tour/search/${slug}`
         );
         const data = await res.json();
         setTour(data.data);

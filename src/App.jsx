@@ -15,7 +15,6 @@ const ToursContext = createContext();
 function App() {
   const [loggedIn, setLog] = useState(localStorage.getItem("token") !== null);
   const user = useRef({ name: "user" });
-
   if (loggedIn) {
     user.current = JSON.parse(localStorage.getItem("user"));
   }

@@ -14,7 +14,7 @@ export default function Overview() {
       async function func() {
         setIsLoading(true);
         const res = await fetch(
-          `https://utopia-backend-lga3.onrender.com/tour/search?q=${q}`
+          `${import.meta.env.VITE_API_URL}/tour/search?q=${q}`
         );
         const D = await res.json();
 
